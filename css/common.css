@@ -163,7 +163,7 @@ h3 {
 .container {
   border-radius: 8px;
   padding: 32px;
-  width: 486px;
+  min-width: 486px;
   background-color: #f6f6fe;
   display: flex;
   flex-wrap: wrap;
