@@ -34,13 +34,15 @@ function clear() {
 function createBoxes(amount) {
   clear();
 
+  const fragment = document.createDocumentFragment();
+
   for (let i = 0; i < amount; i++) {
     size += 10;
     const newBox = document.createElement('div');
     newBox.style.width = `${size}px`;
     newBox.style.height = `${size}px`;
     newBox.style.backgroundColor = getRandomHexColor();
-
-    boxes.append(newBox);
+    fragment.append(newBox);
   }
+  boxes.append(fragment);
 }

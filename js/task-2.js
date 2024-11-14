@@ -33,7 +33,7 @@ const createMarkup = arr => {
     ulItemEl.classList.add('gallery-item');
     const imageEl = document.createElement('img');
     imageEl.classList.add('gallery-item-img');
-    imageEl.url = element.url;
+    imageEl.src = element.url;
     imageEl.alt = element.alt;
     imageEl.width = 360;
     imageEl.height = 300;
